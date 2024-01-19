@@ -15,10 +15,15 @@ body {
 }
 
 .logo-section {
-    border: 1px solid black;
+    
     width: 40%;
-    background-color: gray;
+    
 
+
+}
+.logo-section img{
+    box-sizing: border-box;
+    box-shadow: 8px 8px 15px rgba(177, 175, 175, 0.568),-6px 5px 15px rgba(175, 175, 175, 0.568) ;
 }
 
 .login-section {
