@@ -73,6 +73,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     background: linear-gradient(to right,rgb(223, 115, 52),rgb(190, 104, 53));
+    cursor: pointer;
     
 }
 .write p{
