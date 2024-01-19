@@ -1,0 +1,76 @@
+body { 
+    font-family: 'Roboto', sans-serif;
+    
+    
+    
+}
+
+.container {
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10vh 0 0 0;
+    gap: 10%;
+
+}
+
+.logo-section {
+    border: 1px solid black;
+    width: 40%;
+    background-color: gray;
+
+}
+
+.login-section {
+    text-align: center;
+    width: 40%;
+    height: 80vh; 
+    background: linear-gradient(to right,rgb(178, 219, 131),rgb(150, 192, 103));
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 10px rgba(73, 72, 72, 0.644);
+   
+}
+
+.login-section .write {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;  
+
+}
+.write input{
+    width: 60%;
+    height: 40px;
+    border-radius: 6px;
+
+}
+.user-pass{
+    text-indent: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 102, 0);
+    border-right: 2px solid rgb(255, 102, 0);
+    font-size: 14px;
+    font-weight: 400;
+    background-color: rgb(235, 233, 233);
+    
+}
+.sign-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#sign-in{
+    width:100px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(to right,rgb(223, 115, 52),rgb(190, 104, 53));
+    
+}
+.write p{
+    margin:4px auto 0 auto ;
+    
+}
