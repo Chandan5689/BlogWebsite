@@ -43,19 +43,14 @@ h1 {
 .heading-btns .texts {
     display: flex;
     gap: 4px;
+    transform: scale(1,1);
 }
-
-.texts:hover {
+#bell:hover, .texts:hover {
     color: rgb(241, 136, 75);
     font-weight: bolder;
     transition: all 0.5s ease;
+    transform: scale(1.2,1.2);
 }
-
-.nav-btns {
-
-    padding: 10px 0 0 0;
-}
-
 .search-box {
     display: flex;
     justify-content: center;
@@ -73,5 +68,109 @@ h1 {
     text-indent: 10px;
 }
 #search-icon{
+    font-size:20px;
+    color: rgb(112, 110, 110); 
+    cursor: pointer;
+    
+}
 
+.nav-btns {
+    display: flex;
+    align-items: center;
+    width: 820px;
+    gap: 25px;
+    padding: 10px 0 0 20px;
+    /* border: 1px solid black; */
+    
+}
+.nav-btns button{
+    font-size: 14px;
+    height: 30px;
+    width: auto;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(243, 243, 243);
+}
+
+.main-section{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 30px 40px 0 100px;
+    /* border: 1px solid blue; */
+}
+
+.main-details{
+    display:flex;
+    flex-direction: row;
+    margin:0 0 20px -60px;
+    gap: 30px;
+
+}
+.main-details .thumbnail{
+    filter: saturate(100%);
+    width: 200px; 
+    object-fit:cover;
+    border-radius: 4px;
+    transition: all ease 0.4s;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.main-details .thumbnail:hover{
+   filter: saturate(100%);
+   width: 250px;
+   height: 180px;
+}
+.main-texts{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.main-texts h2{
+    max-width: 509px;
+    width: 100%;
+    margin:0 0 10px 0;
+    cursor: pointer;
+    display: inline-block;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main-texts p{
+    margin: 4px 0 0 0;
+    display: inline-block;
+    max-width: 509px;
+    color: gray;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ 
+ }
+ .profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 505px;
+ }
+ .profile-details {
+    display: flex;
+
+}
+.profile-img {
+    width: 28px;
+    border-radius: 14px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.profile-details button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 12px;
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
 }

@@ -21,9 +21,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50vw;
+    width: 40vw;
     border-radius: 10px;
-    height: 70vh;
+    height: 84vh;
     background: black;
     opacity: 0.8;
     color: white;
@@ -38,17 +38,28 @@ body{
     width: 400px;
     gap: 15px;
     
+    
     /* border: 1px solid blue; */
 }
-.box input{
-   width:100%;
+.signup-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+.signup-details label{
+    padding-left: 4px;
+}
+.signup-details input{
+   max-width:100%;
+   width: 280px;
    height: 30px;
    border: none;
    border-radius: 6px;
    text-indent: 8px;
    outline: none;
    font-size: 14px;
-   font-weight: 400;
+   font-weight: 500;
    border-bottom: 1px solid rgb(231, 159, 25) ;
    border-right: 1px solid rgb(231, 159, 25) ;
    background: transparent;
@@ -62,7 +73,8 @@ body{
     font-weight: 600;
     color: white;
     border: none;
-    background: linear-gradient(to right,rgb(161, 235, 112),rgb(122, 179, 85));
+    background: linear-gradient(to right,rgb(202, 96, 235),rgb(165, 79, 161));
     border-radius: 6px;
+    margin-top: 10px;
     cursor: pointer;
 }
