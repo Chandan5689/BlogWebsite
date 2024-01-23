@@ -1,5 +1,4 @@
 body {
-
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -13,23 +12,51 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
-    height: 90px;
+    height: 98px;
     width: 100%;
+    
     /* background:linear-gradient(to top ,rgba(82, 196, 17, 0.979),rgba(203, 238, 108, 0.959)) ; */
     /* background:linear-gradient(to top ,rgba(20, 197, 209, 0.979),rgba(148, 240, 232, 0.726)) ; */
     background-color: black;
     color: white;
     z-index: 10;
 }
+
+/*logo-section starts*/
 .blog-logo{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
     padding-left: 30px;
+    
 }
 
 .blog-logo img{
-    border: none;
-    border-radius: 50px;
-
+    width: 72px;
+    height: 70px;
+    cursor: pointer; 
 }
+.blog-logo-texts{
+    padding-bottom: 24px;
+    height: 76px; 
+    cursor: pointer; 
+} 
+
+.blog-logo-texts h3{ 
+    font-size: 28px;
+
+    font-weight: bolder;
+    margin-bottom: 4px;  
+}
+.blog-logo-texts p{
+    margin-top:0 ;
+    font-size: 14px; 
+    
+} 
+/*logo-section ends*/
+
 
 .heading-btns {
     /* border: 1px solid purple; */
@@ -44,6 +71,10 @@ body {
 .heading-btns .texts {
     display: flex;
     gap: 4px;
+    color: white;
+}
+.heading-btns a{
+    text-decoration: none;
 }
 
 
@@ -51,7 +82,7 @@ body {
     color: rgb(248, 84, 73);
     font-weight: bolder;
     transition: all 0.5s ease;
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
 }
 
 .started {
@@ -68,7 +99,15 @@ body {
     color: black;
     cursor: pointer;
     border: none;
+    transform: scale(1,1);
+    transition: transform 0.5s ease;
+    
 }
+.started button:hover{
+    transform: scale(1.1,1.1);
+    transition: transform 0.5s ease;
+}
+
 
 /*heading section end*/
 
@@ -82,6 +121,7 @@ body {
 }
 
 .popular {
+    padding-top: 110px;
     padding-left: 40px;
 }
 
@@ -96,14 +136,14 @@ body {
     justify-content: space-evenly;
     gap: 30px;
     padding-bottom: 30px;
-
-
-
 }
 
 .trending-photos .details {
     width: 300px;
     cursor: pointer;
+}
+.trending-photos a{
+    text-decoration:none;
 }
 
 .trending-photos .details:hover {
@@ -132,6 +172,9 @@ body {
 
 .trending-photos .details .main-texts {
     padding-left: 6px;
+}
+.details .main-texts h2{
+    color: black;
 }
 
 .trending-photos .details .profile-details {
@@ -248,7 +291,6 @@ body {
     align-items: center;
 }
 .save-icon .tooltip{
-
     position: absolute;
     background-color: rgb(19, 19, 19);
     color: white;
@@ -257,14 +299,14 @@ body {
     font-size: 12px;
     bottom: -25px;
     transform: scale(0,0);
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
     /* opacity: 0;
     transition: opacity 0.3s ease;
     white-space: nowrap; */
 } 
 .save-icon:hover .tooltip{
     transform: scale(1,1);
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
     /* opacity: 1;
     transition: opacity 0.3s ease; */
 }
@@ -304,7 +346,28 @@ body {
     /*for anchor tag*/
     color: red;
     font-size: 14px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+/* .see-more .see-more-tool{
+    position: absolute;
+    background-color: rgb(124, 124, 124);
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -120px;
+    transform: scale(0,0);
+    transition: all 0.3s ease;
+}
+.see-more:hover .see-more-tool{
+    transform: scale(1,1);
+    transition: all 0.3s ease;
+} */
 
 footer {}
 
@@ -338,18 +401,32 @@ footer {}
 }
 
 
-@media screen and (max-width:712px) {
+@media (max-width:714px) {
     .box {
         flex-wrap: wrap;
-        height: 110px;
-        justify-content: space-evenly;
+        height: 120px;
         
     }
-    .blog-logo img{
-        width: 60px;
+    .blog-logo{
+        padding-top: 0;
+        border: 1px solid blue;
     
     }
+    .blog-logo img{
+        width: 50px;
+        height: 48px;
+    }
+    .blog-logo-texts{
+        height: 60px;
+    }
+    .blog-logo-texts h3{
+        font-size: 16px;
+    }
+    .blog-logo p{
+        font-size: 8px;
+    }
     .heading-btns {
+        margin-top: 0;
         font-size: 12px;
     
     }

@@ -33,24 +33,31 @@ main {
 }
 
 .logo-section {
+    position: relative;
     color: white;
     width: 30vw;
     display: flex;
     flex-direction: column;
+    
+
 }
 
 .logo-section h1 {
+    margin: 0 auto 10px auto;
     font-weight: 600;
 }
 
 .logo-section h3 {
-    margin-top: 20px;
+    margin: 10px auto 0 auto;
     font-weight: 400;
+    
 }
 
 .logo-section img {
+    margin: 0 auto 10px auto;
     width: 300px;
-    margin-top: 20px;
+    
+    border-radius: 50%;
 }
 
 .login-section {
@@ -58,7 +65,7 @@ main {
     width: 400px;
     height: 450px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(45, 216, 228, 0.5);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -78,6 +85,7 @@ h2 {
     width: 310px;
     margin: 30px 0;
     border-bottom: 2px solid rgb(10, 248, 228);
+    
 }
 
 .write label {
@@ -95,6 +103,7 @@ h2 {
 .write input:valid~label {
     top: -5px;
 
+
 }
 
 .write input {
@@ -103,10 +112,21 @@ h2 {
     background: transparent;
     border: none;
     outline: none;
+    box-shadow: none;
     font-size: 1em;
     color: white;
     padding: 0 35px 0 5px;
+    
 }
+
+/* .write input:focus,
+.write input:valid {
+    text-decoration: none;
+    background:transparent;
+    height: 40px;
+    color: white;
+
+} */
 
 .remember-forgot {
     margin: -15px 0 15px;
@@ -118,12 +138,13 @@ h2 {
 
 .remember-forgot label input {
     margin-left: 3px;
+    
 }
 
 .remember-forgot a {
     color: white;
     font-weight: 600;
-     text-decoration:none;
+    text-decoration: none;
 }
 
 .remember-forgot a:hover {
@@ -290,7 +311,7 @@ button {
 .logo-section img{
     box-sizing: border-box;
     /* box-shadow: 8px 8px 15px rgba(177, 175, 175, 0.568),-6px 5px 15px rgba(175, 175, 175, 0.568) ; */
-}
+
 
 /* .shadow{
     

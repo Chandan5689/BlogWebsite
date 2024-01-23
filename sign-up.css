@@ -1,4 +1,275 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+
+    min-height: 100vh; 
+
+}
+
+main {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background: url(cass-images/background2.jpg) no-repeat; */
+    /* background: url(background.jpg)no-repeat; */
+    background: rgb(34, 34, 34) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    animation: animateBG 5s linear infinite; 
+ }
+
+  @keyframes animateBG {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}  
+
+
+
+.signup-section {
+    position: relative;
+    width: 400px;
+    height: 580px;
+    padding-top:20px ; 
+    background: transparent;
+    border: 2px solid rgba(18, 238, 227, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    backdrop-filter: blur(15px);
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.signup-details {
+
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid rgb(10, 248, 228);
+}
+
+.signup-details label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.signup-details input:focus~label,
+.signup-details input:valid~label {
+    top: -5px;
+
+}
+
+.signup-details input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    padding: 0 35px 0 5px;
+}
+
+
+
+button {
+    width: 100%;
+    height: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:360px) {
+    .signup-section{
+        width: 100%;
+        height: 100vh;
+    }
+    .signup-details{
+        width: 270px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
     font-family: 'Roboto', sans-serif;
     position: relative;
     margin: 0;
@@ -28,8 +299,8 @@ body{
     opacity: 0.8;
     color: white;
     /* background:rgb(233, 231, 231); ; */
-    /* border: 1px solid black; */
-}
+/* border: 1px solid black; */
+/* }
  .container .box{
     display: flex;
     flex-direction: column;
@@ -40,8 +311,8 @@ body{
     
     
     /* border: 1px solid blue; */
-}
-.signup-details {
+/* } */
+/* .signup-details {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -77,4 +348,4 @@ body{
     border-radius: 6px;
     margin-top: 10px;
     cursor: pointer;
-}
+} */

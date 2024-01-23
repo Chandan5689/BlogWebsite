@@ -174,3 +174,27 @@ h1 {
     font-size: 12px;
     cursor: pointer;
 }
+.save-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.save-icon .tooltip{
+
+    position: absolute;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -25px;
+    transform: scale(0,0);
+    transition: all 0.3s ease;
+    
+} 
+.save-icon:hover .tooltip{
+    transform: scale(1,1);
+    transition: all 0.3s ease;
+    
+}
