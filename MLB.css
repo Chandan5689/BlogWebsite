@@ -1,12 +1,8 @@
-body {
-
+body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
-
-/*--heading section start*/
 .box {
     display: flex;
     justify-content: space-between;
@@ -21,6 +17,10 @@ body {
 }
 
 /*logo-section starts*/
+a{
+    text-decoration: none;
+    color: white;
+}
 .blog-logo{
     position: relative;
     display: flex;
@@ -94,130 +94,154 @@ body {
 .heading-btns .texts {
     display: flex;
     gap: 4px;
-    transform: scale(1,1);
+    /* transform: scale(1,1); */
 }
-#bell:hover, .texts:hover {
+/* #bell:hover, .texts:hover {
     color: rgb(241, 136, 75);
     font-weight: bolder;
     transition: all 0.5s ease;
     transform: scale(1.2,1.2);
-}
-
-
-.nav-btns {
-    display: flex;
-    align-items: center;
-    width: 820px;
-    gap: 25px;
-    padding: 10px 0 0 20px;
-    
-    /* border: 1px solid black; */
-    
-}
-.nav-btns button{
-    font-size: 14px;
-    height: 30px;
-    width: auto;
-    border: none;
-    border-radius: 15px;
-    background-color: rgb(243, 243, 243);
-}
-
-.main-section{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    padding: 30px 40px 0 100px;
-    /* border: 1px solid blue; */
-}
-
-.main-section a{
-    text-decoration: none;
-    color: black;
-    width: 676px;
-}
-.main-details{
-    display:flex;
-    flex-direction: row;
-    margin:0 0 20px -60px;
-    gap: 30px;
-
-}
-.main-details .thumbnail{
-    filter: saturate(100%);
-    width: 200px; 
-    object-fit:cover;
-    border-radius: 4px;
-    transition: all ease 0.4s;
-    margin-bottom: 20px;
-    cursor: pointer;
-
-}
-
-.main-details .thumbnail:hover{
-   filter: saturate(100%);
-   width: 250px;
-   height: 180px;
-}
-.main-texts{
+} */
+main{
     display: flex;
     flex-direction: column;
-
-
+    margin: 100px auto 200px auto;
+    align-items: center;
 }
-.main-texts h2{
-    max-width: 509px;
-    width: 100%;
-    margin:0 0 10px 0;
-    cursor: pointer;
-    display: inline-block;
-    white-space: wrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.main-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    
 }
-.main-texts p{
-    margin: 4px 0 0 0;
-    display: inline-block;
-    max-width: 509px;
+.main-details h1{
+    font-size: 40px;
+}
+.main-details .main-texts p{
+    font-size: 24px;
+}
+.profile-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-section img{
+    border-radius: 20px;
+}
+.profile-section .profile-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-right: 400px;
+}
+.profile-details p{
+    margin: 0;
+}
+.profile-details p span{
     color: gray;
+}
+.full-story{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 30px;
+    
+}
+
+.full-story .story{
+    width: 58%;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 1px solid red;
+    padding-bottom:60px ;
+    
+}
+.thumbnail-texts{
+font-size: 24px;
+}
+.full-story .story .title-texts h3{
+    margin-bottom: 0;   
+}
+.story p{
+   word-spacing: 5px;
+   line-height: 40px;
+}
+
+.icons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(235, 234, 234, 0.404);
+    border-bottom: 1px solid rgba(235, 234, 234, 0.404);
+    padding: 10px 0;
+}
+
+.more-from{
+    margin: 10px 400px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+   
+}
+.more-from img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.more-from h4{
+    display: inline;
+}
+.last-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 54%;
+    padding:20px 0 0 50px;
+
+    /* border: 1px solid black; */
+
+}
+
+.more-stories h3{
+    display: inline-block;
+    margin-bottom: 0;
     white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
- 
- }
- .profile-section {
+
+}
+.more-stories p{
+    color: gray;
+    display: inline-block;
+    margin-top: 0;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+.bottom-profile-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-    width: 505px;
- }
- .profile-details {
-    display: flex;
+    width: 280px;
+    
 
-}
-.profile-img {
-    width: 28px;
-    border-radius: 14px;
-    margin-right: 8px;
-    cursor: pointer;
-}
-.profile-details button {
-    padding: 6px 14px;
-    border: none;
-    border-radius: 12px;
-    margin-left: 10px;
-    font-size: 12px;
-    cursor: pointer;
 }
 .save-icon{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
 }
 .save-icon .tooltip{
-
     position: absolute;
     background-color: rgb(19, 19, 19);
     color: white;
@@ -226,11 +250,36 @@ body {
     font-size: 12px;
     bottom: -25px;
     transform: scale(0,0);
-    transition: all 0.3s ease;
-    
+    transition: all 0.5s ease;
+   
 } 
 .save-icon:hover .tooltip{
     transform: scale(1,1);
-    transition: all 0.3s ease;
-    
+    transition: all 0.5s ease;
+   
+}
+
+footer{
+   
+}
+.tips {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0;
+    width: 80vw;
+    padding-left: 60px; */
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-top: 1px solid rgb(187, 185, 185);
+
+
+}
+
+.tips h4 {
+
+    cursor: pointer;
+
 }
