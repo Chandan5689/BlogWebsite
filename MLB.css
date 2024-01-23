@@ -208,10 +208,11 @@ font-size: 24px;
 
 }
 
-.more-stories h3{
+.more-stories h2{
+    width: 300px;
+    margin-bottom: 4px;
     display: inline-block;
-    margin-bottom: 0;
-    white-space: wrap;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 
@@ -220,7 +221,7 @@ font-size: 24px;
     color: gray;
     display: inline-block;
     margin-top: 0;
-    white-space: wrap;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 300px;
