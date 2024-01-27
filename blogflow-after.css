@@ -96,11 +96,12 @@ body {
     gap: 4px;
     transform: scale(1,1);
 }
+
 #bell:hover, .texts:hover {
     color: rgb(241, 136, 75);
     font-weight: bolder;
+    transform: scale(1.1,1.1);
     transition: all 0.5s ease;
-    transform: scale(1.2,1.2);
 }
 
 
@@ -131,10 +132,9 @@ body {
     /* border: 1px solid blue; */
 }
 
-.main-section a{
+.main-section .main-details a{
     text-decoration: none;
     color: black;
-    width: 676px;
 }
 .main-details{
     display:flex;
