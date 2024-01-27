@@ -96,6 +96,19 @@ body {
     gap: 4px;
     transform: scale(1,1);
 }
+
+.heading-btns .profileImage{
+   border-radius: 15px;
+    margin-left: 10px;
+   border: 1px solid white;
+   transform: scale(1,1);
+}
+
+.heading-btns .profileImage:hover{
+    transform: scale(1.4,1.4);
+    transition: all 0.3s ease;
+}
+
 #bell:hover, .texts:hover {
     color: rgb(241, 136, 75);
     font-weight: bolder;
@@ -232,5 +245,9 @@ body {
 .save-icon:hover .tooltip{
     transform: scale(1,1);
     transition: all 0.3s ease;
+    
+}
+
+.heading-btns img{
     
 }

@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>BlogFlow</title>
     <link rel="icon" href="blog-logo-only.png" type="icon">
+    <link rel="stylesheet" href="scrollableContainer.css">
 </head>
 
 <body>
@@ -36,26 +37,43 @@
                 <p class="texts"><i class="fa fa-address-card-o" style="font-size:20px"></i>Membership</p>
                 <p class="texts"><i class="	fa fa-edit" style="font-size:20px"></i>Write</p>
                 <i id="bell" class="material-icons">notifications</i>
-                <img src="cass-icons/user.png" alt="" width="26px" height="26px"
-                    style="border-radius: 15px; margin-left: 10px; border: 1px solid white;">
+                <img class="profileImage" src="cass-icons/user.png" alt="" width="26px" height="26px">
 
             </div>
         </div>
-        <section class="nav-btns">
-            <h4>Following</h4>
-            <button>Technology</button>
-            <button>Sports</button>
-            <button>Travelling</button>
-            <button>Food</button>
-            <button>Politics</button>
-            <button>Business</button>
-            <button>Movies</button>
-            <button>Environment</button>
-            <button>Pollution</button>
-            <button>Jokes</button>
-            <button>Animes</button>
-        </section>
+        <div class="scrollable-container">
+            <div class="leftArrow"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+            </div>
+            <div class="list">
+              <ul>
+                <li ><a class="active" href="#">All</a></li>
+                <li><a href="#">Following</a></li>
+                <li><a href="#">Philosophy</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Hent</a></li>
+                <li><a href="#">sports</a></li>
+                <li><a href="#">Huhuehueh</a></li>
+                <li><a href="#">rumpum</a></li>
+                <li><a href="#">nomore</a></li>
+                <li><a href="#">gae</a></li>
+                
+              </ul>
+            </div>
+            <div class="rightArrow active"> 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+               </div>
+        
+        
+          </div>
     </header>
+    
 
     <main class="main-section">
         <a href="MLB.html">
@@ -71,7 +89,7 @@
                             <button>Sports</button>
                         </div>
                         <div class="save-icon">
-                            <img src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
+                            <img class="bookmark" src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
                             <div class="tooltip">Bookmark</div>
                         </div>
                     </div>
@@ -226,6 +244,7 @@
 
 
     </main>
+    <script src="scrollable.js"></script>
 
 </body>
 
