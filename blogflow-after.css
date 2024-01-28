@@ -228,6 +228,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+.bookmark{
+   width: 24px;
+    cursor: pointer;
+}
+
 .save-icon .tooltip{
 
     position: absolute;
@@ -247,6 +252,3 @@ body {
     
 }
 
-.heading-btns img{
-    
-}
