@@ -257,6 +257,11 @@ input[type="search"]::-webkit-search-cancel-button{
     justify-content: center;
     align-items: center;
 }
+.bookmark{
+   width: 24px;
+    cursor: pointer;
+}
+
 .save-icon .tooltip{
 
     position: absolute;
