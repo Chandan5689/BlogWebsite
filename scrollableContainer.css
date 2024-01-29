@@ -1,13 +1,12 @@
 .scrollable-container {
     background-color: black;
-    max-width: 700px;
-    margin: 0 100px 0 270px;
+    max-width: 750px;
+    margin: 0 0 0 30px;
     border-radius: 10px;
     overflow: hidden;
-    position: fixed;
-    top: 100px;
-    z-index: 20;
-
+    position:sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .scrollable-container svg {
