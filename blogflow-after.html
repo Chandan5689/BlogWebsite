@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="blogflow-after.css">
+    <link rel="stylesheet" href="scrollableContainer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,7 +15,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>BlogFlow</title>
     <link rel="icon" href="blog-logo-only.png" type="icon">
-    <link rel="stylesheet" href="scrollableContainer.css">
+
 </head>
 
 <body>
@@ -36,44 +37,46 @@
                 <!-- <p class="texts"><i class="fa fa-globe" style="font-size:20px"></i>Our Story</p> -->
                 <!-- <p class="texts"><i class="fa fa-address-card-o" style="font-size:20px"></i>Membership</p> -->
                 <p class="texts"><i class="	fa fa-edit" style="font-size:20px"></i>Write</p>
-                <i id="bell" class="material-icons">notifications</i>
+                <img id="bell" src="cass-icons/notification.png" alt="notification">
                 <img class="profileImage" src="cass-icons/user.png" alt="" width="26px" height="26px">
 
             </div>
         </div>
         <div class="scrollable-container">
-            <div class="leftArrow"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-            </svg>
+            <div class="leftArrow"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
             </div>
             <div class="list">
-              <ul>
-                <li ><a class="active" href="#">All</a></li>
-                <li><a href="#">Following</a></li>
-                <li><a href="#">Philosophy</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">Art</a></li>
-                <li><a href="#">Programming</a></li>
-                <li><a href="#">Anime</a></li>
-                <li><a href="#">Hent</a></li>
-                <li><a href="#">sports</a></li>
-                <li><a href="#">Huhuehueh</a></li>
-                <li><a href="#">rumpum</a></li>
-                <li><a href="#">nomore</a></li>
-                <li><a href="#">gae</a></li>
-                
-              </ul>
+                <ul>
+                    <li><a class="active" href="#">All</a></li>
+                    <li><a href="#">Following</a></li>
+                    <li><a href="#">Philosophy</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Programming</a></li>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Space</a></li>
+
+                </ul>
             </div>
-            <div class="rightArrow active"> 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-              </svg>
-               </div>
-        
-        
-          </div>
+            <div class="rightArrow active">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+
+
+        </div>
     </header>
-    
+
 
     <main class="main-section">
 
@@ -92,7 +95,7 @@
                         <button>Sports</button>
                     </div>
                     <div class="save-icon">
-                        <img class="bookmark bookmaked" src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer ;">
+                        <img src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
                         <div class="tooltip">Bookmark</div>
                     </div>
                 </div>
@@ -101,153 +104,191 @@
 
 
 
-        <div class="main-details">
-            <a href="Startup.html"><img src="cass-images/growth.webp" alt="Business" class="thumbnail" width="200"
-                    height="140"></a>
-            <div class="main-texts">
-                <a href="Startup.html">
-                    <h2>How to Fuel Your Startup's Growth Engine</h2>
-                </a>
-                <p>To keep close to the startup community, I chat with founders often.</p>
-                <div class="profile-section">
-                    <div class="profile-details">
-                        <img src="cass-logos/growth-logo.jpg" alt="profile" class="profile-img">
-                        <p>Aug 22, 2023 · 8 min read </p>
-                        <button>Business</button>
+            <div class="main-details">
+                <a href="Startup.html"><img src="cass-images/growth.webp" alt="Business" class="thumbnail" width="200"
+                        height="140"></a>
+                <div class="main-texts">
+                    <a href="Startup.html">
+                        <h2>How to Fuel Your Startup's Growth Engine</h2>
+                    </a>
+                    <p>To keep close to the startup community, I chat with founders often.</p>
+                    <div class="profile-section">
+                        <div class="profile-details">
+                            <img src="cass-logos/growth-logo.jpg" alt="profile" class="profile-img">
+                            <p>Aug 22, 2023 · 8 min read </p>
+                            <button>Business</button>
+                        </div>
+                        <div class="save-icon">
+                            <img src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
+                            <div class="tooltip">Bookmark</div>
+                        </div>
                     </div>
-                    <div class="save-icon">
-                        <img class="bookmark" src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
-                        <div class="tooltip">Bookmark</div>
+                </div>
+            </div>
+
+            <div class="main-details">
+                <img src="cass-images/earthquake.webp" alt="earthquake" class="thumbnail" width="200" height="140">
+                <div class="main-texts">
+                    <h2>Earthquakes in Japan: We are Always Prepared</h2>
+                    <p>Yet another trying time has come, but I believe in their resilience</p>
+                    <div class="profile-section">
+                        <div class="profile-details">
+                            <img src="cass-logos/logo1.jpg" alt="profile" class="profile-img">
+                            <p>Jan 2 · 6 min read </p>
+                            <button>Country</button>
+                        </div>
+                        <div class="save-icon">
+                            <img src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
+                            <div class="tooltip">Bookmark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-details">
+                <img src="cass-images/google3.webp" alt="Google" class="thumbnail" width="200" height="140">
+                <div class="main-texts">
+                    <h2>Google is laying off hundreds of workers who sell ads to big businesses</h2>
+                    <p>The cuts come days after the company laid off more than a thousand employees in hardware and
+                        engineering divisions.</p>
+                    <div class="profile-section">
+                        <div class="profile-details">
+                            <img src="cass-logos/google-profile-logo.webp" alt="profile" class="profile-img">
+                            <p>Jan 14 · 47 min read </p>
+                            <button>Technology</button>
+                        </div>
+                        <div class="save-icon">
+                            <img src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
+                            <div class="tooltip">Bookmark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-details">
+                <img src="cass-images/anime1.webp" alt="Anime" class="thumbnail" width="200" height="140">
+                <div class="main-texts">
+                    <h2>23 filmes, séries e animes legais que vi no primeiro quadrimestre de 2023 </h2>
+                    <p>O que vi em 2023 que foi tão legal que quis compartilhar?</p>
+                    <div class="profile-section">
+                        <div class="profile-details">
+                            <img src="cass-logos/anime1-logo.jpg" alt="profile" class="profile-img">
+                            <p>May 3, 2023 · 9 min read </p>
+                            <button>Anime</button>
+                        </div>
+                        <div class="save-icon">
+                            <img src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
+                            <div class="tooltip">Bookmark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-details">
+                <img src="cass-images/hollywood.webp" alt="Movies" class="thumbnail" width="200" height="140">
+                <div class="main-texts">
+                    <h2>Hollywood Hacks: Cyber Security Fact from Fiction in the Movies </h2>
+                    <p>A socially awkward individual with exceptional keyboard skills sits.</p>
+                    <div class="profile-section">
+                        <div class="profile-details">
+                            <img src="cass-logos/hollywood-logo.jpg" alt="profile" class="profile-img">
+                            <p>Jan 8 · 7 min read </p>
+                            <button>Movies</button>
+                        </div>
+                        <div class="save-icon">
+                            <img src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
+                            <div class="tooltip">Bookmark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main-details">
+                <img src="cass-images/data-meta.webp" alt="Technology" class="thumbnail" width="200" height="140">
+                <div class="main-texts">
+                    <h2>Data engineering at Meta: High-Level Overview of the internal tech stack</h2>
+                    <p>The cuts come days after the company laid off more than a thousand employees in hardware and
+                        engineering divisions.</p>
+                    <div class="profile-section">
+                        <div class="profile-details">
+                            <img src="cass-logos/data-meta-logo.png" alt="profile" class="profile-img">
+                            <p>Oct 10, 2023 . 12 min read</p>
+                            <button>Technology</button>
+                        </div>
+                        <div class="save-icon">
+                            <img src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
+                            <div class="tooltip">Bookmark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-details">
+                <img src="cass-images/cycle.webp" alt="Travelling" class="thumbnail" width="200" height="140">
+                <div class="main-texts">
+                    <h2>Zen and the Art of Mountain Biking </h2>
+                    <p>Cycling is meditation in motion.</p>
+                    <div class="profile-section">
+                        <div class="profile-details">
+                            <img src="cass-logos/logo2.jpg" alt="profile" class="profile-img">
+                            <p>Jan 2 · 10 min read </p>
+                            <button>Sports</button>
+                        </div>
+                        <div class="save-icon">
+                            <img src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
+                            <div class="tooltip">Bookmark</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="main-details">
-            <img src="cass-images/earthquake.webp" alt="earthquake" class="thumbnail" width="200" height="140">
-            <div class="main-texts">
-                <h2>Earthquakes in Japan: We are Always Prepared</h2>
-                <p>Yet another trying time has come, but I believe in their resilience</p>
-                <div class="profile-section">
-                    <div class="profile-details">
-                        <img src="cass-logos/logo1.jpg" alt="profile" class="profile-img">
-                        <p>Jan 2 · 6 min read </p>
-                        <button>Country</button>
-                    </div>
-                    <div class="save-icon">
-                        <img class="bookmark" src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
-                        <div class="tooltip">Bookmark</div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-        <div class="main-details">
-            <img src="cass-images/google3.webp" alt="Google" class="thumbnail" width="200" height="140">
-            <div class="main-texts">
-                <h2>Google is laying off hundreds of workers who sell ads to big businesses</h2>
-                <p>The cuts come days after the company laid off more than a thousand employees in hardware and
-                    engineering divisions.</p>
-                <div class="profile-section">
-                    <div class="profile-details">
-                        <img src="cass-logos/google-profile-logo.webp" alt="profile" class="profile-img">
-                        <p>Jan 14 · 47 min read </p>
-                        <button>Technology</button>
-                    </div>
-                    <div class="save-icon">
-                        <img class="bookmark" src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
-                        <div class="tooltip">Bookmark</div>
-                    </div>
+        <div class="trending">
 
+            <h2>Trending on BlogFlow</h2>
 
-                </div>
-            </div>
-        </div>
-
-        <div class="main-details">
-            <img src="cass-images/anime1.webp" alt="Anime" class="thumbnail" width="200" height="140">
-            <div class="main-texts">
-                <h2>23 filmes, séries e animes legais que vi no primeiro quadrimestre de 2023 </h2>
-                <p>O que vi em 2023 que foi tão legal que quis compartilhar?</p>
-                <div class="profile-section">
-                    <div class="profile-details">
-                        <img src="cass-logos/anime1-logo.jpg" alt="profile" class="profile-img">
-                        <p>May 3, 2023 · 9 min read </p>
-                        <button>Anime</button>
-                    </div>
-                    <div class="save-icon">
-                        <img class="bookmark" src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
-                        <div class="tooltip">Bookmark</div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <div class="main-details">
-            <img src="cass-images/hollywood.webp" alt="Movies" class="thumbnail" width="200" height="140">
             <div class="main-texts">
                 <h2>Hollywood Hacks: Cyber Security Fact from Fiction in the Movies </h2>
                 <p>A socially awkward individual with exceptional keyboard skills sits.</p>
-                <div class="profile-section">
-                    <div class="profile-details">
-                        <img src="cass-logos/hollywood-logo.jpg" alt="profile" class="profile-img">
-                        <p>Jan 8 · 7 min read </p>
-                        <button>Movies</button>
-                    </div>
-                    <div class="save-icon">
-                        <img class="bookmark" src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
-                        <div class="tooltip">Bookmark</div>
-                    </div>
-
-
+                <div class="profile-details">
+                    <img src="cass-logos/hollywood-logo.jpg" alt="profile" class="profile-img">
+                    <p>Jan 8 · 7 min read </p>
+                    <button>Movies</button>
                 </div>
             </div>
-        </div>
 
-
-        <div class="main-details">
-            <img src="cass-images/data-meta.webp" alt="Technology" class="thumbnail" width="200" height="140">
             <div class="main-texts">
-                <h2>Data engineering at Meta: High-Level Overview of the internal tech stack</h2>
-                <p>The cuts come days after the company laid off more than a thousand employees in hardware and
-                    engineering divisions.</p>
-                <div class="profile-section">
-                    <div class="profile-details">
-                        <img src="cass-logos/data-meta-logo.png" alt="profile" class="profile-img">
-                        <p>Oct 10, 2023 . 12 min read</p>
-                        <button>Technology</button>
-                    </div>
-                    <div class="save-icon">
-                        <img class="bookmark " src="cass-icons/icons8-save-32.png" alt="save" width="24px" style="cursor: pointer;">
-                        <div class="tooltip">Bookmark</div>
-                    </div>
+                <h2>23 filmes, séries e animes legais que vi no primeiro quadrimestre de 2023 </h2>
+                <p>O que vi em 2023 que foi tão legal que quis compartilhar?</p>
 
-
+                <div class="profile-details">
+                    <img src="cass-logos/anime1-logo.jpg" alt="profile" class="profile-img">
+                    <p>May 3, 2023 · 9 min read </p>
+                    <button>Anime</button>
                 </div>
             </div>
-        </div>
-        <div class="main-details">
-            <img src="cass-images/cycle.webp" alt="Travelling" class="thumbnail" width="200" height="140">
+
             <div class="main-texts">
                 <h2>Zen and the Art of Mountain Biking </h2>
                 <p>Cycling is meditation in motion.</p>
-                <div class="profile-section">
-                    <div class="profile-details">
-                        <img src="cass-logos/logo2.jpg" alt="profile" class="profile-img">
-                        <p>Jan 2 · 10 min read </p>
-                        <button>Sports</button>
-                    </div>
-                    <div class="save-icon">
-                        <img class="bookmark" src="cass-icons/icons8-save-32.png" alt="save" >
-                        <div class="tooltip">Bookmark</div>
-                    </div>
 
-
+                <div class="profile-details">
+                    <img src="cass-logos/logo2.jpg" alt="profile" class="profile-img">
+                    <p>Jan 2 · 10 min read </p>
+                    <button>Sports</button>
                 </div>
             </div>
-        </div>
 
+            <div class="main-texts">
+                <h2>The Ultimate Guide for Making the Best Career Choices in Tech</h2>
+                <p>Finding Your Purpose Is the Goal. Making the Right Choices Is the Path.</p>
+                <div class="profile-details">
+                    <img src="cass-logos/guide-logo.png" alt="profile" class="profile-img">
+                    <p>Dec 4,2023 · 14 min read </p>
+                    <button>Carrer</button>
+                </div>
+            </div>
+
+        </div>
 
     </main>
     <script src="scrollable.js"></script>
