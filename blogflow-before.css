@@ -14,7 +14,7 @@ body {
     top: 0;
     height: 98px;
     width: 100%;
-    
+
     /* background:linear-gradient(to top ,rgba(82, 196, 17, 0.979),rgba(203, 238, 108, 0.959)) ; */
     /* background:linear-gradient(to top ,rgba(20, 197, 209, 0.979),rgba(148, 240, 232, 0.726)) ; */
     background-color: black;
@@ -23,38 +23,41 @@ body {
 }
 
 /*logo-section starts*/
-.blog-logo{
+.blog-logo {
     position: relative;
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
     padding-left: 30px;
-    
+
 }
 
-.blog-logo img{
+.blog-logo img {
     width: 72px;
     height: 70px;
-    cursor: pointer; 
+    cursor: pointer;
 }
-.blog-logo-texts{
-    padding-bottom: 24px;
-    height: 76px; 
-    cursor: pointer; 
-} 
 
-.blog-logo-texts h3{ 
+.blog-logo-texts {
+    padding-bottom: 24px;
+    height: 76px;
+    cursor: pointer;
+}
+
+.blog-logo-texts h3 {
     font-size: 28px;
 
     font-weight: bolder;
-    margin-bottom: 4px;  
+    margin-bottom: 4px;
 }
-.blog-logo-texts p{
-    margin-top:0 ;
-    font-size: 14px; 
-    
-} 
+
+.blog-logo-texts p {
+    margin-top: 0;
+    font-size: 14px;
+
+}
+
 /*logo-section ends*/
 
 
@@ -73,7 +76,8 @@ body {
     gap: 4px;
     color: white;
 }
-.heading-btns a{
+
+.heading-btns a {
     text-decoration: none;
 }
 
@@ -99,12 +103,13 @@ body {
     color: black;
     cursor: pointer;
     border: none;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     transition: transform 0.5s ease;
-    
+
 }
-.started button:hover{
-    transform: scale(1.1,1.1);
+
+.started button:hover {
+    transform: scale(1.1, 1.1);
     transition: transform 0.5s ease;
 }
 
@@ -142,8 +147,9 @@ body {
     width: 300px;
     cursor: pointer;
 }
-.trending-photos a{
-    text-decoration:none;
+
+.trending-photos a {
+    text-decoration: none;
 }
 
 .trending-photos .details:hover {
@@ -160,20 +166,20 @@ body {
     width: 300px;
     object-fit: cover;
     border-radius: 6px;
-    transition: all ease 0.4s;
+    transition: all ease 0.5s;
 }
 
 .details .trending-img:hover {
-    
     filter: saturate(100%);
-    width: 390px; 
+    width: 390px;
 
 }
 
 .trending-photos .details .main-texts {
     padding-left: 6px;
 }
-.details .main-texts h2{
+
+.details .main-texts h2 {
     color: black;
 }
 
@@ -190,7 +196,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 30px 40px 0 100px;
-    /* border: 1px solid blue; */
+
 }
 
 .main-details-section {
@@ -209,21 +215,20 @@ body {
 }
 
 .main-details .thumbnail {
-    /* filter: saturate(100%); */
-    transform: scale(1,1);
+    filter: saturate(100%);
     width: 200px;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 20px;
+    transition: all 0.4s ease;
     cursor: pointer;
-    transition: all ease 0.4s;
+
 }
 
 .main-details .thumbnail:hover {
-    transform: scale(1.3,1.3);
-    /* filter: saturate(100%);
+    filter: saturate(100%);
     width: 250px;
-    height: 180px; */
+    height: 180px;
 }
 
 .main-texts {
@@ -261,7 +266,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 8px;
-    width: 460px; 
+    width: 460px;
 }
 
 .profile-details {
@@ -284,13 +289,15 @@ body {
     font-size: 12px;
     cursor: pointer;
 }
-.save-icon{
+
+.save-icon {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.save-icon .tooltip{
+
+.save-icon .tooltip {
     position: absolute;
     background-color: rgb(19, 19, 19);
     color: white;
@@ -298,14 +305,15 @@ body {
     border-radius: 2px;
     font-size: 12px;
     bottom: -25px;
-    transform: scale(0,0);
+    transform: scale(0, 0);
     transition: all 0.3s ease;
     /* opacity: 0;
     transition: opacity 0.3s ease;
     white-space: nowrap; */
-} 
-.save-icon:hover .tooltip{
-    transform: scale(1,1);
+}
+
+.save-icon:hover .tooltip {
+    transform: scale(1, 1);
     transition: all 0.3s ease;
     /* opacity: 1;
     transition: opacity 0.3s ease; */
@@ -329,7 +337,6 @@ body {
 }
 
 .discover {
-    /* border: 1px solid red; */
     height: fit-content;
     padding: 0 30px 20px 0;
     display: grid;
@@ -341,9 +348,11 @@ body {
     background-color: black;
     color: white;
 }
+
 .discover .started button:hover {
-    transform: scale(1,1);
+    transform: scale(1, 1);
 }
+
 .see-more {
     /*for anchor tag*/
     color: red;
@@ -354,6 +363,7 @@ body {
     align-items: center;
     cursor: pointer;
 }
+
 /* .see-more .see-more-tool{
     position: absolute;
     background-color: rgb(124, 124, 124);
@@ -378,25 +388,17 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 40px;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0;
-    width: 80vw;
-    padding-left: 60px; */
     padding-top: 20px;
     padding-bottom: 40px;
     border-top: 1px solid rgb(187, 185, 185);
-
-
 }
 
 .tips h4 {
-
     cursor: pointer;
 
 }
 
 .tips h4:hover {
-    /* background: rgba(104, 103, 103, 0.555); */
     color: rgb(241, 9, 9);
     transform: scale(1.2, 1.2);
     transition: all 0.3s ease;
@@ -407,36 +409,42 @@ body {
     .box {
         flex-wrap: wrap;
         height: 120px;
-        
+
     }
-    .blog-logo{
+
+    .blog-logo {
         padding-top: 0;
         border: 1px solid blue;
-    
+
     }
-    .blog-logo img{
+
+    .blog-logo img {
         width: 50px;
         height: 48px;
     }
-    .blog-logo-texts{
+
+    .blog-logo-texts {
         height: 60px;
     }
-    .blog-logo-texts h3{
+
+    .blog-logo-texts h3 {
         font-size: 16px;
     }
-    .blog-logo p{
+
+    .blog-logo p {
         font-size: 8px;
     }
+
     .heading-btns {
         margin-top: 0;
         font-size: 12px;
-    
+
     }
-    
+
     .box .heading-btns .started button {
         font-size: 12px;
         padding: 4px 10px;
-        
+
     }
 
 }
@@ -458,7 +466,7 @@ body {
     .main-details-section .main-details .thumbnail {
         width: 100px;
         height: 80px;
-        
+
     }
 
     .main-details-section .main-details .main-texts h2 {
@@ -470,9 +478,10 @@ body {
         margin-top: 2px;
         font-size: 10px;
     }
-    .profile-section{
+
+    .profile-section {
         justify-content: space-between;
-        width:250px;
+        width: 250px;
     }
 
     .main-details-section .main-details .main-texts .profile-details .profile-img {

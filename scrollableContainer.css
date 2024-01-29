@@ -1,30 +1,27 @@
-.scrollable-container
-{
+.scrollable-container {
     background-color: black;
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 100px 0 270px;
     border-radius: 10px;
-   overflow: hidden;
-   position: fixed;
-   top: 100px;
-   z-index: 20; 
-   border: 1px solid red;
-   
+    overflow: hidden;
+    position: fixed;
+    top: 100px;
+    z-index: 20;
+
 }
 
-.scrollable-container svg
-{
+.scrollable-container svg {
     width: 24px;
     height: 24px;
-    padding :8px;
+    padding: 8px;
     cursor: pointer;
     color: white;
     border-radius: 50%;
-  
+
 
 }
 
-.scrollable-container ul{
+.scrollable-container ul {
     display: flex;
     list-style: none;
     gap: 16px;
@@ -33,25 +30,25 @@
     overflow-x: scroll;
     scrollbar-width: 0;
     scroll-behavior: smooth;
-   
+
 }
 
-.scrollable-container ul::-webkit-scrollbar{
+.scrollable-container ul::-webkit-scrollbar {
     display: none;
 }
 
-.scrollable-container ul.dragging{
+.scrollable-container ul.dragging {
     scroll-behavior: auto;
 }
 
-.scrollable-container ul.dragging a{
+.scrollable-container ul.dragging a {
     pointer-events: none;
 }
 
 
 
-.scrollable-container a{
-    text-decoration:none;
+.scrollable-container a {
+    text-decoration: none;
     color: white;
     background-color: #333;
     border-radius: 10px;
@@ -60,38 +57,36 @@
     white-space: nowrap;
 }
 
-.scrollable-container a.active{
+.scrollable-container a.active {
     background: white;
     color: black;
 }
 
 .scrollable-container .rightArrow,
-.scrollable-container .leftArrow
-{
+.scrollable-container .leftArrow {
     position: absolute;
     height: 100%;
     width: 100;
     top: 0;
     display: none;
 }
+
 .scrollable-container .rightArrow.active,
-.scrollable-container .leftArrow.active
-{
+.scrollable-container .leftArrow.active {
     display: flex;
 }
 
-.scrollable-container .rightArrow{
+.scrollable-container .rightArrow {
     right: 0;
-    background:linear-gradient(to left, black 50%,transparent);
+    background: linear-gradient(to left, black 50%, transparent);
     justify-content: flex-end;
 }
-.scrollable-container .leftArrow
-{
+
+.scrollable-container .leftArrow {
     background: linear-gradient(to right, black 50%, transparent);
 }
 
-.scrollable-container svg:hover
-{
+.scrollable-container svg:hover {
     background: #333;
-    
+
 }
